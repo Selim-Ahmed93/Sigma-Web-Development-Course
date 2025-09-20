@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector in Css</title>
+</head>
+<body>
+
+  <!--  this is selector in css  -->
+    <style>
+      div{
+        background-color:cadetblue;
+      }
+      h1{
+        color:black;
+      }
+      .selector{
+        color:brown;
+
+      }
+      #hello{
+        color:white;
+        background-color:darkgreen;
+      }
+
+      /* div>h1 this is write way to select child  */
+      div>.childnode{
+        color:mediumturquoise;
+      }
+
+  /* lets start universal selector in css its apply all element */
+
+  /* *{
+    margin:0;
+    padding:0
+  } */
+
+  /* lets start pseudo selector */
+
+  a:visited{
+    color:brown;
+  }
+  a:link{
+    color:fuchsia;
+  }
+
+  a:active{
+    color:darkolivegreen;
+  }
+  a:hover{
+    color:teal;
+  }
+    </style>
+  <div>
+    <h1>whats selector in css </h1>
+  </div>
+<!-- This Class selector -->
+  <div>
+    <h2 class="selector">i am class selector</h2>
+  </div>
+<!-- this ID Selector -->
+  <h3 id="hello">Hello I am ID Selector</h3>
+
+  <!-- LETS START CHILD SELECTOR IN CSS -->
+
+  <div>
+    <h1 class="childnode">HELLO CHILD SELECTOR</h1>
+  </div>
+ <a href="https://google.com">lets go google</a>
+
+</body>
+</html>
