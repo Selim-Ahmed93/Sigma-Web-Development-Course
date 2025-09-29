@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Property in Css</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+   .box{
+    width:80vh;
+    height: 130px;
+    border:2px solid green;
+    margin: 3px;
+    /* position:relative; */
+    padding: 3px;
+   }
+   .box1{
+    background-color:darkgreen;
+    height:144px;
+    width:80vw;
+    position:sticky;
+    z-index:1;
+   }
+   .box2{
+    background-color:brown;
+     position:relative;
+     height: 220px;
+     width:50vw;
+    /* top:30px;
+    left:54px; */
+    /* z-index:3; */
+   }
+   .box3{
+    background-color:darkcyan;
+   }
+   .box4{
+    background-color:darkmagenta;
+   }
+   .parents{
+    border:3px solid red;
+    margin: 34px;
+    padding: 45px;
+    position:relative;
+   }
+  </style>
+</head>
+<body>
+
+  <div class="parents">
+  <div class=" box box1"></div>
+  <div class=" box box2"></div>
+  <div class=" box box3"></div>
+  <div class=" box box4"></div>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus id libero iure quas blanditiis quibusdam, sit distinctio voluptates. Maxime rem minus deleniti possimus labore consequuntur architecto repellendus cupiditate nam quasi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque omnis, perspiciatis soluta impedit quaerat ipsam exercitationem commodi doloremque, quis rem dignissimos sequi quos nesciunt quia, unde ipsa non eligendi molestiae.</p>
+  </div>
+
+
+</body>
+</html>
