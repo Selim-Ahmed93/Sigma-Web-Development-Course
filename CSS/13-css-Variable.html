@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Variable</title>
+
+    <style>
+       :root{
+        --color:rgba(255, 255, 0, 0.521);
+        --second:rgba(0, 128, 58, 0.945);
+       }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color:var(--color);
+      }
+      .container {
+        background-color:var(--second);
+      }
+      ul{
+        display:flex;
+      }
+      ul li{
+        list-style:none;
+        padding: 30px;
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
+      saepe cumque quaerat neque, sequi perferendis, aperiam optio vel ex
+      possimus nihil amet. Dolorem vel totam eveniet autem porro, voluptatibus
+      illo.
+    </div>
+  </body>
+</html>
