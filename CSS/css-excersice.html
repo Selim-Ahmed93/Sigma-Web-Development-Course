@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive media query</title>
+</head>
+<style>
+  body{
+    width:80vw;
+    height:auto;
+    background-color:mediumorchid;
+  }
+  .box{
+    height: 360px;
+    width: 400px;
+    border:2px solid green;
+    margin: 25px auto;
+
+  }
+  @media only screen and (max-width:460px){
+    .box{
+      background-color:brown;
+      text-align:center;
+      color:darkcyan;
+      font-size:25px;
+    }
+    .container{
+      flex-direction:column;
+    }
+  }
+  .container div {
+    width:220px;
+    height:180px;
+    border:2px solid blue;
+    margin: 10px;
+    padding:10px;
+    /* display:flex; */
+  }
+  .container{
+    display:flex;
+  }
+</style>
+<body>
+  <div class="box">
+   <h1>Hello Box</h1>
+  </div>
+  <div class="container">
+    <div>BOX1</div>
+    <div>BOX2</div>
+    <div>BOX3</div>
+    <div>BOX4</div>
+  </div>
+</body>
+</html>

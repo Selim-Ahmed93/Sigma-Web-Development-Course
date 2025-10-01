@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Css Card Design</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Card Design</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .cardcontainer {
-        width: 90%;
-        max-width: 380px;
-        height: auto;
-        background-color: darkgreen;
-        margin: 20px auto;
-        border-radius: 12px;
-        padding-bottom: 20px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-      }
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      background-color:gray;
+      padding: 50px;
 
-      img {
-        /* margin-top:15px; */
-        width: 90%;
-        height: auto;
-        display: block;
-        margin:25px auto;
-        border-radius: 12px;
-      }
+    }
+    .card{
+      width:244px;
+      height:460px;
+      border-radius:7px;
+      background-color:white;
+      
+    }
+    .image{
+      width:220px;
+      padding:8px;
+      border-radius:12px;
 
-      .nature {
-        margin:18px;
-        padding: 6px 12px;
-        border-radius: 6px 8px;
-        background-color: bisque;
-        font-size: 14px;
-      }
-      .lake {
-        margin:18px;
-        font-size: 14px;
-        padding: 6px 12px;
-        border-radius: 6px 8px;
-        background-color: bisque;
-      }
-      .heading {
-        margin-top:18px;
-        padding: 0 16px;
-      }
+    }
+    .content p{
+      font-size:13px;
+      color:gray;
+      font-family: "Poppins", sans-serif;
+      margin: 5px;
+    }
+    .content{
+      padding: 5px;
+    }
+    .capsule span{
+     border:2px solid green;
+     padding:4px 5px;
+     border-radius:8px;
+     font-size:8px;
+     font-family: "Poppins", sans-serif;
+    }
+    .capsule{
+      padding: 0 34px;
+    }
+    .button{
+      text-align:center;
+    }
+    .button button{
+      padding:4px 19px;
+      border-radius:7px;
+      background-color:rgb(122, 122, 202);
+      cursor:pointer;
+    }
+    .content h2{
+      font-size:25px;
+      margin:10px;
 
-      .paragraph {
-        margin-top:18px;
-        padding: 0 16px;
-        font-size: 20px;
-        color: blanchedalmond;
-      }
-      button {
-        margin: 18px;
-        padding: 6px 12px;
-        border-radius: 6px 8px;
-        background-color: bisque;
-        font-size: 14px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: rgb(0, 139, 69);
-        transform: scale(1.05);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="cardcontainer">
-      <img
-        src="https://ikozmik.com/Content/Images/uploaded/its-free-featured.jpg"
-        alt="new images" />
-
-      <span class="nature">Nature</span>
-      <span class="lake">Lake</span>
-
-      <div class="heading">
-        <h1>Logo di Braies</h1>
-      </div>
-      <div class="paragraph">
-        <p>
-          How would you describe your nature? Are you a simple lighthearted
-          person or are you someone who is very assertive in life? Take the
-          online quiz and we will tell you if you have a hardy nature, a relaxed
-          nature, quiet nature, or something else.
-        </p>
-      </div>
-
-      <button>Read More</button>
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="images">
+      <img class="image" src="https://thumbs.dreamstime.com/b/kayaking-lessons-boy-life-buoy-suit-kayak-lessons-duri-kayaking-lessons-boy-life-buoy-suit-kayak-lessons-104486539.jpg?w=768" alt="boy images"
     </div>
-  </body>
+   <div class="capsule">
+    <span>Nature</span>
+    <span>Lake</span>
+   </div>
+   <div class="content">
+    <h2>Harry</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil id architecto eveniet eius praesentium illo laborum, provident suscipit, explicabo, tempore exercitationem rerum corporis facilis quasi modi tempora temporibus iusto inventore!</p>
+   </div>
+   <div class="button">
+    <button>Submit</button>
+   </div>
+  </div>
+</body>
 </html>

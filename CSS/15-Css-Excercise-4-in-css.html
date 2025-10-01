@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Navbar Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color:#0a0a0a;
+      }
+     
+      nav {
+        display:flex;
+        width:70vw;
+        min-width:600px;
+        height:100vh;
+        /* box-shadow: 2px 2px 5px red, -2px -2px 5px blue; */
+        align-items:center;
+        justify-content:space-around;
+        /* border-radius:8px; */
+        list-style: none;
+        cursor: pointer;
+        margin: auto;
+        padding:0;
+      }
+      a{
+        position:relative;
+        font-family:'poppins', sans-serif;
+        text-decoration:none;
+        color:#a0a0a0;
+        font-size:18px;
+        letter-spacing:1.5px;
+      }
+      a:after{
+        position:absolute;
+        background-color:rgb(179, 67, 67);
+        height:3px;
+        width:0;
+        left:0;
+        bottom:-10px;
+        transition:0.3s;
+        content:'';
+      }
+      a:hover:after{
+        width:100%;
+      }
+      a:hover{
+        color:#ffff;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <nav>
+     <a href="#Home">Home</a>
+     <a href="#About">About</a>
+     <a href="#Contact">Contact</a>
+     <a href="#Sevices">Services</a>
+     <a href="#Blog">Blog</a>
+    </nav>
+  </body>
+</html>
