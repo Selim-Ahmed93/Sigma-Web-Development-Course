@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Float And Property</title>
+  <style>
+    /* *{
+      margin: 0;
+      padding: 0;
+    } */
+    img{
+      float:right;
+      
+    }
+    .Cards{
+      border:2px solid green;
+      display:flow-root;
+    }
+    .card{
+      border:2px solid red;
+    }
+    .card:nth-child(3){
+     background-color:aqua;
+     clear:right;
+    }
+  </style>
+</head>
+<body>
+  <div class="Cards">
+    <img width="230px" src="https://images.pexels.com/photos/18288380/pexels-photo-18288380.jpeg" alt="nature images">
+
+    <div class="card">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cupiditate earum, culpa, quasi perspiciatis dolor facilis aut minima laboriosam quaerat sunt velit ab error, nostrum quae eveniet omnis nobis. Fugit.</p>
+    </div>
+  
+    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, accusantium? Quos, et. Quo cum quos ratione veritatis? Sed possimus, enim ipsum aperiam dolore autem ex laudantium aspernatur veritatis consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nam. Vel id, quisquam iure impedit voluptatum sequi. Saepe, voluptatibus velit sed odit doloremque eaque quod minus ab consectetur maiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam atque eligendi excepturi nulla pariatur nihil eaque iure! Dolores aliquam excepturi est cupiditate quae ducimus tenetur veritatis, placeat ratione eaque? </div>
+    <div class="card">Card 3</div>
+  </div>
+</body>
+</html>
