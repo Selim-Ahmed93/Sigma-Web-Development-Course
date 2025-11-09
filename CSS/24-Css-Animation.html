@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Animation</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            animation: moveAndColor 2s infinite alternate;
+        }
+
+        @keyframes moveAndColor {
+            0% {
+                transform: translateY(0);
+                background-color: #3498db;
+            }
+            100% {
+                transform: translateY(-50px);
+                background-color: #e74c3c;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
