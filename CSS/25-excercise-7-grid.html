@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Exercise</title>
+  <style>
+    .logo {
+      cursor: pointer;
+      width: 140px;
+      height: 50px;
+      padding: 10px;
+    }
+
+    nav {
+      width: 100%;
+      height: 75px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: center;
+      border: 1px solid gray;
+      background-color: rgb(241, 237, 237);
+      border-radius: 8px;
+    }
+
+    .right ul {
+      display: flex;
+      cursor: pointer;
+      gap: 20px;
+      align-items: center;
+      font-family: sans-serif, "monospace";
+      font-size: 18px;
+      padding: 14px;
+    }
+
+    .right ul li {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    .btn {
+      justify-self: end;
+      padding: 14px;
+    }
+
+    .btn button {
+      padding: 10px 20px;
+      background-color: rgb(255, 234, 0);
+      color: rgb(23, 22, 22);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      /* margin:7px; */
+      font-family: sans-serif, "monospace";
+      font-size: 16px;
+    }
+    .first {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      font-family: sans-serif, "monospace";
+      font-size: 18px;
+      padding: 40px;
+      /* border: 1px solid gray; */
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+    span {
+      font-size: 44px;
+      color:rgb(33, 32, 32)
+    
+    }
+    .heading{
+      margin-top: 20px;
+      font-size: 18px;
+      color:gray;
+      font-family: sans-serif, "monospace";
+
+    }
+    .mybtn button {
+      padding: 15px 40px;
+      background-color: rgb(255, 196, 0);
+      color: rgb(13, 12, 12);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      /* margin: 7px; */
+      margin-top:23px;
+      font-family: sans-serif, "monospace";
+      font-size: 16px;
+    }
+    .flex{
+      display:flex;
+    }
+    .small{
+      font-size:14px;
+      font-family: sans-serif, "monospace";
+    }
+    .second{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+
+    }
+    .grid{
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap: 15px;
+      margin-top:20px;
+      justify-content: center;
+      align-items: center;
+      display:inline-block
+      /* cursor: pointer; */
+      
+      
+      
+     
+    }
+  .lang{
+    font-size:18px;
+    font-family: sans-serif, "monospace";
+    margin-bottom:10px;
+    
+
+  }
+  .items{
+    /* background-color: aquamarine; */
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+    /* cursor: pointer; */
+    
+  }
+  .blue{
+    background-color: blue;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor: pointer;
+    margin:5px;
+  }
+  .green{
+    background-color: green;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor: pointer;
+    margin:5px;
+  }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png" alt="hello" width="140px"
+          height="50px">
+      </div>
+
+      </div>
+      <div class="right">
+        <ul>
+          <li>product</li>
+          <li>pricing</li>
+          <li>resource</li>
+          <li>About US</li>
+        </ul>
+      </div>
+      <div class="btn">
+        <button>Get UltraEdit</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Main content goes here -->
+    <section class="first">
+     <span>Download UltraEdit for Windows</span> <img width="28" src="https://www.ultraedit.com/wp-content/uploads/2023/01/image-1-1-1.svg" alt="">
+     <div class="heading">
+      Download and try UltraEdit before you buy it! This download <br> includes the full Windows version of the text editor.
+      </div>  
+      <div class="mybtn">
+      <button>Download Mac Or Linux</button>
+      </div>
+    </section>
+    <section class="second">
+      <!-- Additional content can go here -->
+       <div class="download">
+        <span>
+          Download UltraEdit
+        </span>
+        <div class="small"> v2025.1 (released 2025-10-10) | Latest changes </div>
+       </div>
+       <div class="grid">
+        <div class="items">
+          <div class="lang">
+            English
+            <button class="blue">download 32bit</button>
+            <button class="green">download 64bit</button>
+          </div>
+        <div class="items">
+          <div class="lang">
+            Bangla
+            <button class="blue">download 32bit</button>
+            <button class="green">download 64bit</button>
+          </div>
+        <div class="items">
+          <div class="lang">
+            French
+            <button class="blue">download 32bit</button>
+            <button class="green">download 64bit</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="lang">
+            German
+            <button class="blue">download 32bit</button>
+            <button class="green">download 64bit</button>
+          </div>
+        </div>
+       </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
